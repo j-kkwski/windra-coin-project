@@ -1,0 +1,15 @@
+{
+  "name": "windra-coin",
+  "version": "1.0.0",
+  "description": "Windra (WND) is a utility coin that rewards real-world ecological action. Users earn WND tokens by engaging in verified sustainable behaviors — and then reinvest those tokens into global ecological projects like reforestation, ocean cleanup, and renewable tech development.",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "JK",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
