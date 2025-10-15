@@ -18,8 +18,6 @@ A small static marketing/demo site for Windra (WND) with interactive UI elements
 
 This repository uses a single ES module entrypoint at `src/app.js` which handles all UI behavior (modal, navigation, tabs, sticky nav, reveal-on-scroll, lazy-loading, slider). The code is written as an ES module so bundlers like Parcel can resolve asset URLs (via `import.meta.url`) to produce correct hashed asset filenames in production builds.
 
-Why this matters: when lazy-loading images you often set a `data-src` attribute in HTML. Parcel won't rewrite custom HTML attributes automatically at build time, so `src/app.js` resolves `data-src` using `new URL(..., import.meta.url)` before assigning `img.src`. This ensures the built site references Parcel's fingerprinted asset filenames instead of the raw source path.
-
 ## Repo structure
 
 ```
